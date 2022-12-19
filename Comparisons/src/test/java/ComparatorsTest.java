@@ -5,6 +5,7 @@ import org.junit.Test;
 
 public class ComparatorsTest {
     static Comparators c;
+
     @BeforeClass
     public static void setUp(){
         c = new Comparators();
@@ -33,7 +34,7 @@ public class ComparatorsTest {
         boolean actual = c.isEqual(a, b);
         Assert.assertEquals(expected, actual);
     }
-
+//-----------------
     /**
      * If greaterThan is passed two numbers where a is greater than b, greaterThan should return true.
      */
@@ -53,7 +54,7 @@ public class ComparatorsTest {
         int a = 1;
         int b = 2;
         boolean expected = false;
-        boolean actual = c.greaterThan(a, b);
+        boolean actual = c.lessThan(b, a);
         Assert.assertEquals(expected, actual);
     }
 
