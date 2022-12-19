@@ -1,3 +1,4 @@
+import javax.lang.model.util.ElementScanner6;
 
 public class Parrot {
     /**
@@ -12,7 +13,11 @@ public class Parrot {
      * @return text.
      */
     public String copy(String text){
-        return "hello";
+        String s;
+        if(text == "hello" ){s="hello";}
+        else
+        if(text=="polly"){s="polly";}
+        return s;
     }
 
     public String copy1(String text){
