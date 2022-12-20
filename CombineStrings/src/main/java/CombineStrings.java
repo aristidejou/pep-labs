@@ -8,10 +8,6 @@ public class CombineStrings {
      * @return the combination of strings a and b.
      */
     public String combine(String a, String b){
-        String s1=a;
-        String s2=b;
-        String s;
-        if(s1.equals("123")&&(s2.equals("456"))){s="123456";}
-        return "123456";
+        return a+b;
     }
 }
