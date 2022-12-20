@@ -45,7 +45,11 @@ public class Bird {
      *  * greater than or equal to 3.
      */
     public String sound(){
-        return "";
+        String s="";
+        if(ageMonths<3) {s="Tweet";}
+        else
+        if(ageMonths>=3){s="Chirp";}
+        return s;
     }
 
 }
