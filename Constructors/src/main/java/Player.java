@@ -31,7 +31,8 @@ public class Player {
      * @param playerName the name of the player to be created.
      */
     public Player(String playerName){
-
+        
+        if(playerName=="Frodo"){}
     }
 
     /**
