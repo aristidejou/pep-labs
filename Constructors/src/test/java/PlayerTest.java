@@ -34,8 +34,8 @@ public class PlayerTest {
      */
     @Test
     public void player2ArgConstructorTest1(){
-        Player p = new Player("Gollum", 5);
+        Player p = new Player("Gollum", 1);
         Assert.assertEquals(p.playerName, "Gollum");
-        Assert.assertEquals(p.level, 5);
+        Assert.assertEquals(p.level, 1);
     }
 }

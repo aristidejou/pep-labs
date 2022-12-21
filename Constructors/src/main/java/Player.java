@@ -1,3 +1,6 @@
+import javax.lang.model.util.ElementScanner6;
+
+import com.azul.crs.jar.ZipTools.Spring1xCentralDirectoryFactory;
 
 /**
  * This class contains two constructors, but currently the constructors have no behavior,
@@ -31,8 +34,24 @@ public class Player {
      * @param playerName the name of the player to be created.
      */
     public Player(String playerName){
+        String s1="Frodo";
+        String s2="Sam";
+        String s3="Gollum";
+        if(playerName.equals(s1)){
+            this.playerName=playerName;
+            this.level=1;
+        }
+        else
+        if(playerName.equals(s2)){
+            this.playerName=playerName;
+            this.level=1;
+        }
+       else  if(playerName.equals(s3)){
+            this.playerName=playerName;
+            
+        }
         
-        if(playerName=="Frodo"){}
+      
     }
 
     /**
@@ -49,7 +68,8 @@ public class Player {
      * @param level the starting level of the player to be created.
      */
     public Player(String playerName, int level){
-
+        this.playerName=playerName;
+        this.level=1;
     }
 
 }
