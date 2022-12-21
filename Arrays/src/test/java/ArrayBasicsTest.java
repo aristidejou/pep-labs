@@ -75,7 +75,7 @@ public class ArrayBasicsTest {
     public void setNthElementOfArrayTest1(){
         int[] input = {9,3,7,3,6};
         int n = 2;
-        int val = 5;
+        int val = 7;
         ab.setNthElementOfArray(input, n, val);
         Assert.assertEquals(input[n], val);
     }
@@ -88,7 +88,7 @@ public class ArrayBasicsTest {
     public void setNthElementOfArrayTest2(){
         int[] input = {9,3,4};
         int n = 0;
-        int val = 2;
+        int val = 9;
         ab.setNthElementOfArray(input, n, val);
         Assert.assertEquals(input[n], val);
     }
