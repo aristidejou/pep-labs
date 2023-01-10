@@ -40,7 +40,7 @@ public class InsertARecord {
         try {
             Connection connection = ConnectionUtil.getConnection();
             Statement s = connection.createStatement();
-            return s.executeUpdate(sql) != 0;
+            return s.executeUpdate(sql) == 0;
 
         } catch (SQLException e) {
             System.out.println("problem1: " + e.getMessage() + '\n');
