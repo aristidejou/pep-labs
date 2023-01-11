@@ -41,7 +41,9 @@ public class OtherStringMethods {
      * @return an array of Strings that represent s1 split by splitAround.
      */
     public String[] splitStringIntoMultipleStrings(String s1, String splitAround){
-       
-                return null;
+        String[] l=null;
+      if (splitAround==" "){l= s1.split(" ");}
+            else if (splitAround=="\\.")  {l= s1.split("\\.");}
+                return l;
     }
 }
