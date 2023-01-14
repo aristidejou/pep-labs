@@ -17,6 +17,6 @@ public class WordCountMap {
     public Map<String, Integer> returnWordMap(String words){
      // Creating an empty HashMap
     
-        return words[];
+        return null;
     }
 }
