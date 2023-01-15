@@ -17,7 +17,7 @@ import java.sql.Statement;
  *      The documentation in W3 schools has a TRUNCATE demo under the DROP TABLE demo.
  */
 public class Truncate {
-
+  
     /**
      *      Song Table Diagram:
      *      |      title        |        artist         |
