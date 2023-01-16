@@ -8,7 +8,16 @@ public class CombineArrays {
      * @return an array containing the contents of arr1 followed by the contents of arr2.
      */
     public int[] combine(int[] arr1, int[] arr2){
+        
 
-        return null;
+
+        int aLen = arr1.length;
+        int bLen = arr2.length;
+        int[] result = new int[aLen + bLen];
+
+        System.arraycopy(arr1, 0, result, 0, aLen);
+        System.arraycopy(arr2, 0, result, aLen, bLen);
+
+        return result;
     }
 }
