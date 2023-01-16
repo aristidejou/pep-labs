@@ -8,9 +8,12 @@ public class MostCommonCharacter {
      * @return the most common character within str.
      */
     public char recurringChar(String str) {
-        char string[] = str.toCharArray();  
-        int i, j, min, max;          
-        int[] freq = new int[str.length()];  
+        int []tab=new int[10];
+       for(int i=0;i<str.length();i++){
+        for(int j=0;j<str[j].length;j++)
+        if (str.charAt(i) == c)
+        res++;
+       }
 
         return ' ';
     }
