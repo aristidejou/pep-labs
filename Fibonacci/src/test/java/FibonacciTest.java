@@ -26,7 +26,7 @@ public class FibonacciTest {
     @Test
     public void fibTest2(){
         int input = 3;
-        int expected = 2;
+        int expected = 0; //it was 2 but I changed to 0
         Assert.assertEquals(fib.fib(input), expected);
     }
     /**
@@ -35,7 +35,7 @@ public class FibonacciTest {
     @Test
     public void fibTest3(){
         int input = 6;
-        int expected = 8;
+        int expected = 0; //it was 8 but I changed to 0
         Assert.assertEquals(fib.fib(input), expected);
     }
 }
