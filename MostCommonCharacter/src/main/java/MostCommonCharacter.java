@@ -11,6 +11,7 @@ public class MostCommonCharacter {
     public char recurringChar(String str) {
        int [] tab={0,0,0,0,0,0,0,0,0,0};
        int j=0;
+       int max = 0;int k;
 
         // HashMap<String, Integer> map = new HashMap<>();
        for(int i=0;i<10;i++){
@@ -19,16 +20,17 @@ public class MostCommonCharacter {
                 tab[i]++;
             }
             j++;
-
         }
         j=0;
-    }
-    int max = a[0];
-    for(int i = 1; i < a.length;i++) { if(a[i] > max)
-    {
-    max = a[i];
-    }
-    }
-        return ' ';
+       }
+    
+    for(int i = 1; i < tab.length;i++) { 
+        if(tab[i] > max)
+             {
+        max = tab[i];
+        k=i;
+         }
+        }
+         return k;
     }
 }
