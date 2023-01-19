@@ -9,7 +9,7 @@ public class ReturnLongestString {
      */
     public String longest(String[] arr){
        int max=0;
-        for(int i=0;i<arr.length;i++){
+        for(int i=0;i<arr.length-1;i++){
         if(arr[i].length()<arr[i+1].length()){
             max=i+1;
         }
