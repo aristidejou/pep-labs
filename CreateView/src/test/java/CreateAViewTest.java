@@ -27,7 +27,7 @@ public class CreateAViewTest {
         try {
 
             Connection connection = ConnectionUtil.getConnection();
-            //String sql = "SELECT firstname FROM site_user;";
+            String sql = "SELECT * FROM firstname_lastname;";
 
             PreparedStatement ps = connection.prepareStatement(sql);
 
