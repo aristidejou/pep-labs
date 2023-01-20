@@ -19,11 +19,9 @@ public class WordCountMap {
      Map<Integer, String> hashMap = new HashMap<Integer, String>();
     String[] str = words.split(" ");
     for (String word : str) {
-        int integer = hashMap.get(word).indexOf(word);
-        if (integer == 0)
-        hashMap.put(1, word);
-        else
-        hashMap.put(integer+1, word);
+       int i=0;
+       if()
+        hashMap.put(i+1, word);
     }
      return hashMap;
     }
