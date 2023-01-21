@@ -9,31 +9,23 @@ public class MostCommonCharacter {
      * @return the most common character within str.
      */
     public char recurringChar(String str) {
-       // Creating a HashMap containing char
-        // as a key and occurrences as  a value
-        HashMap<Character, Integer> charCountMap
-            = new HashMap<Character, Integer>();
- 
-        // Converting given string to char array
- 
-        char[] strArray = str.toCharArray();
- 
-        // checking each char of strArray
-        for (char c : strArray) {
-            if (charCountMap.containsKey(c)) {
- 
-                // If char is present in charCountMap,
-                // incrementing it's count by 1
-                charCountMap.put(c, charCountMap.get(c) + 1);
-            }
-            else {
- 
-                // If char is not present in charCountMap,
-                // putting this char to charCountMap with 1 as it's value
-                charCountMap.put(c, 1);
-            }
+        char maxappearchar = ' ';
+        int counter = 0;
+        int[] charcnt = new int[Character.MAX_VALUE + 1];
+        
+        
+        for (int i = 0 ; i < str.length() ; i++)
+        {
+            char ch = str.charAt(i);
+            // increment this character's cnt and compare it to our max.
+            charcnt[ch]++ ;
+            if (charcnt[ch] >= counter)
+            {
+                counter = charcnt[ch];
+                maxappearchar = ch;
+            } 
         }
-        return 0;
+        return maxappearchar;
  
     }
 }
