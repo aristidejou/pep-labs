@@ -3,6 +3,8 @@ package Application.Service;
 import Application.DAO.BookDAO;
 import Application.Model.Book;
 
+import static org.mockito.ArgumentMatchers.nullable;
+
 import java.util.List;
 
 /**
@@ -51,7 +53,7 @@ public class BookService {
      * key was already in use.)
      */
     public Book addBook(Book book) {
-        if(book.equals(book)==false){
+        if(bookDAO.getBookByIsbn(book.getIsbn())==null){
         return bookDAO.insertBook(book);}
         else return null;
     }
