@@ -18,7 +18,7 @@ public class AddTest {
         int input1 = 1;
         int input2 = 2;
         int expected = 3;
-        int actual = a.addNumbers(input1, input2);
+        int actual = a.addNumbers(input1, input2);System.out.println("actual=" + actual);
         Assert.assertEquals(expected, actual);
     }
 
